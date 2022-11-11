@@ -1,0 +1,13 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: customerServer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #配置Nacos地址
+feign:
+  sentinel:
+    enabled: true # 激活Sentinel对Feign的支持
